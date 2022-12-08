@@ -1,0 +1,138 @@
+body {
+    background-color: gray;
+    padding: 30px;
+    position: relative;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url('./background.jpg');
+    margin: 0 auto;
+    margin-top:2rem;
+    max-width: 1200px;
+    min-height: 800px;
+    border-radius: 50px;
+    background-size: cover;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+.sub-container{
+   /*padding-top:20%;*/
+   height: 50%;
+   text-align: center;
+   padding-top:10%;
+   vertical-align: center;
+}
+
+.sub-container p:first-child{
+    font-family: 'Nerko One';
+    font-size: 3rem;
+    margin:0;
+    margin-top: 2rem;
+}
+.sub-container .code{
+    font-family: 'Diplomata';
+    position: relative;
+    font-size: 10rem;
+    font-weight: bolder;
+    color: gray;
+    margin:0;
+    margin-top: 5rem;
+    letter-spacing: 1.5rem;
+}
+span{
+ 
+    position: absolute;
+    color: white; 
+    z-index: 1;
+    letter-spacing: 1.5rem;
+    left: 19rem;
+    font-size: 10rem;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: code;
+}
+.third{
+    font-family: 'Stint Ultra Condensed';
+    font-size: 2rem;
+    margin:0;
+    margin-top:4rem;
+    letter-spacing: 3px;
+}
+.button-3d {
+    display: inline-block;
+  	padding: 1.5em 2.6em;
+  	border-radius: 0;
+	color: black;
+    background-color: white;
+  	font-weight: bold;
+  	font-size: 1rem;
+  	letter-spacing: 2px;
+  	text-transform: uppercase;
+  	text-decoration: none;
+	position: relative;
+	transition: all 250ms ease;
+    border: 1px solid black;
+    font-family: 'Stint Ultra Condensed';
+    margin-top: 4rem;
+  }
+  
+ .border{
+    border: 1px solid white;
+    position :absolute;
+   top:-10px;
+   left: 10px;
+   height: 100%;
+   width: 100%;
+ }
+ .button-3d:hover{
+   cursor: pointer;
+   transition: all 250ms ease;
+ }
+
+ .moon, .earth{
+    background-color: transparent;
+    border-radius:50%;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+ }
+.moon{
+    background-image: url('./moon.png');
+    top:5rem;
+    left: 7rem;
+    animation-name: moon;
+
+}
+.earth{
+    background-image: url('./earth.png');
+    bottom: 5rem;
+    right:7rem;
+    animation-name: earth;
+
+}
+@keyframes moon {
+    0%   { left:7rem; top:5rem;}
+    50% { left:-5px; top:-5px;}
+    100% { left:7rem; top:5rem;}
+  }
+
+  @keyframes earth {
+    0%   { bottom: 5rem; right:7rem;}
+    50% { bottom: -5px; right:-5px;}
+    100%   { bottom: 5rem; right:7rem;}
+
+  }
+  @keyframes code {
+    0%   { color : white}
+    50% { color:gray;}
+    100%   {color : white}
+
+  }
